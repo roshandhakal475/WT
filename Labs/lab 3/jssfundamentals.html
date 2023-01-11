@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form>
+  <label for="inputString">Enter a string:</label><br>
+  <input type="text" id="inputString" name="inputString"><br>
+  <button type="button" onclick="reverseString()">Reverse</button>
+</form>
+
+<p id="output"></p>
+
+<script>
+function reverseString() {
+  var inputString = document.getElementById("inputString").value;
+  var outputString = inputString.split("").reverse().join("");
+  document.getElementById("output").innerHTML = outputString;
+}
+</script>
+
+</body>
+</html>
