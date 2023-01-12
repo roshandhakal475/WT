@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function reverseString(str) {
+    return str.split("").reverse().join("");
+}
+</script>
+</head>
+<body>
+<p>Enter a string to reverse: <input type="text" id="str"></p>
+<button onclick="alert(reverseString(document.getElementById('str').value))">Reverse String</button>
+</body>
+</html>
